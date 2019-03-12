@@ -171,6 +171,10 @@ export default {
     righttoleft: {
       type: String,
       default: 'false'
+    },
+    opened: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -193,6 +197,9 @@ export default {
     if (this.activeMonthStart === 11) this.activeYearEnd = this.activeYearStart + 1
   },
   watch: {
+    opened: function(opened) {
+      this.isOpen = opened
+    },
     startNextActiveMonth: function (value) {
       if (value === 0) this.activeYearEnd = this.activeYearStart + 1
     }
