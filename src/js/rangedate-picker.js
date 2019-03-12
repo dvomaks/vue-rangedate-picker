@@ -22,6 +22,10 @@ const presetRangeLabel = {
     lastSevenSays: 'Last 7 Days',
     lastThirtyDays: 'Last 30 Days'
   },
+  RU: {
+    today: 'Сегодня',
+    thisMonth: 'Этот месяц'
+  },
   ID: {
     today: 'Hari ini',
     thisMonth: 'Bulan ini',
